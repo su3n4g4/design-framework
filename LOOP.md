@@ -17,20 +17,22 @@
 
 ## 2. フェーズ一覧
 
-| No. | フェーズ | スキル | 成果物 | 入力 | 常設の承認ポイント |
-|---|---|---|---|---|---|
-| 1-1 | ユースケース定義 | usecase-definition | 1-1_usecase-definition.md | 要件 | ★ |
-| 1-2 | 概念モデリング | concept-modeling | 1-2_concept-modeling.md | 要件、1-1 | |
-| 1-3 | 責務割り当て | responsibility-allocation | 1-3_responsibility-allocation.md | 1-1、1-2 | ★ |
-| 2 | 品質リスク分析 | quality-risk-analysis | 2_quality-risk-analysis.md | 要件、1-1〜1-3 | |
-| 3 | 見積もり | estimation | 3_estimation.md | 1-3、2 | ★ |
-| 4-1 | 制御ロジック設計 | control-logic-design | 4-1_control-logic-design.md | 1-3、2 | |
-| 4-2 | データモデル設計 | data-model-design | 4-2_data-model-design.md | 1-2、1-3、2 | |
-| 4-3 | テーブル設計 | table-design | 4-3_table-design.md | 1-2、1-3、4-2 | |
-| 4-4 | 入出力設計 | io-design | 4-4_io-design.md | 1-1、1-3、4-1 | |
-| 5 | 例外フロー設計 | exception-flow-design | 5_exception-flow-design.md | 1-1、4-1〜4-4 | ★ |
+| No. | フェーズ | スキル | 成果物 | 入力 | 常設の承認ポイント | スキルの検証 |
+|---|---|---|---|---|---|---|
+| 1-1 | ユースケース定義 | usecase-definition | 1-1_usecase-definition.md | 要件 | ★ | 未検証 |
+| 1-2 | 概念モデリング | concept-modeling | 1-2_concept-modeling.md | 要件、1-1 | | 未検証 |
+| 1-3 | 責務割り当て | responsibility-allocation | 1-3_responsibility-allocation.md | 1-1、1-2 | ★ | 未検証 |
+| 2 | 品質リスク分析 | quality-risk-analysis | 2_quality-risk-analysis.md | 要件、1-1〜1-3 | | 未検証 |
+| 3 | 見積もり | estimation | 3_estimation.md | 1-1〜1-3、2 | ★ | 未検証 |
+| 4-1 | 制御ロジック設計 | control-logic-design | 4-1_control-logic-design.md | 1-3、2 | | 未検証 |
+| 4-2 | データモデル設計 | data-model-design | 4-2_data-model-design.md | 1-2、1-3、2 | | 未検証 |
+| 4-3 | テーブル設計 | table-design | 4-3_table-design.md | 1-2、1-3、4-2 | | 未検証 |
+| 4-4 | 入出力設計 | io-design | 4-4_io-design.md | 1-1、1-3、2、4-1 | | 未検証 |
+| 5 | 例外フロー設計 | exception-flow-design | 5_exception-flow-design.md | 1-1、2、4-1〜4-4 | ★ | 未検証 |
 
 要件は案件フォルダ直下の `requirements.md`。成果物は案件フォルダの `design/` に置く。
+
+「スキルの検証」は、そのスキルを試しの題材で回し、問題を直し終えたかどうか。未検証のスキルで作った成果物は、人間が特に注意して確認する。
 
 ---
 
