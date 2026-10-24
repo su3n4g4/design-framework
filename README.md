@@ -122,6 +122,7 @@
 | skills/phase/ | フェーズごとのスキル |
 | skills/common/ | どのフェーズでも使う共通スキル（用語、ID と記法など） |
 | templates/ | 案件で使うファイルのひな形 |
+| indicators/ | 設計の指標の案（スキルへの組み込み前）。インストールの対象外 |
 | entry/ | `/design-loop` コマンドの原本。インストールでスキルとして登録される（「`/design-loop` でループが回るしくみ」を参照） |
 | install.sh、SETUP.md | Claude Code に入れるためのスクリプトと手順 |
 
