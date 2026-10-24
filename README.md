@@ -71,7 +71,7 @@
 
 初めて使うときは、SETUP.md に従って Claude Code に入れる。
 
-1. 案件フォルダを作り、要件を `requirements.md` という名前で置く
+1. 案件フォルダを作り、要件を `requirements.md` という名前で置く（ひな形は `templates/requirements.md`）
 2. 案件フォルダで Claude Code を起動し、`/design-loop 1-1` と打つ
    - `design/`（STATE.md、DECISIONS.md、reviews/）がなければ、実装者が作る
 3. 実装者が成果物を作り、検証役が検証する。却下されれば実装者が直して再検証する（ここまで自動）
