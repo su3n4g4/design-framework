@@ -1,6 +1,6 @@
 ---
 name: id-notation
-description: 設計の成果物で使う ID と記法のルール。フェーズをまたいで同じ対象を指すとき、成果物を書くとき、検証するときに使う。
+description: 設計の成果物で使う ID と記法のルール、品質評価基準の ID、判断の ID の一覧。フェーズをまたいで同じ対象を指すとき、成果物を書くとき、検証するときに使う。
 ---
 
 # ID と記法
@@ -27,3 +27,41 @@ description: 設計の成果物で使う ID と記法のルール。フェーズ
 - データモデルの名前は、概念一覧の名称と一致させる
 - 記法はテンプレート・表・コードブロックの中で使う。説明文では日本語の名称を使う
 - 1つの対象には1つの名前だけを使う。別名が必要になったら、用語の変更として人間に確認する
+
+---
+
+## 品質評価基準の ID
+
+検証で使う基準の ID。`接頭辞-2桁の連番` の形で、成果物の中では使わない（指摘や確かめで参照する）。
+
+### フェーズ固有
+
+| 接頭辞 | フェーズ | 定義している場所 |
+|---|---|---|
+| UD | 1-1 ユースケース定義 | `skills/phase/usecase-definition.md` |
+| CM | 1-2 概念モデリング | `skills/phase/concept-modeling.md` |
+| RA | 1-3 責務割り当て | `skills/phase/responsibility-allocation.md` |
+| QR | 2 品質リスク分析 | `skills/phase/quality-risk-analysis.md` |
+| ES | 3 見積もり | `skills/phase/estimation.md` |
+| CL | 4-1 制御ロジック設計 | `skills/phase/control-logic-design.md` |
+| DM | 4-2 データモデル設計 | `skills/phase/data-model-design.md` |
+| TD | 4-3 テーブル設計 | `skills/phase/table-design.md` |
+| IO | 4-4 入出力設計 | `skills/phase/io-design.md` |
+| EF | 5 例外フロー設計 | `skills/phase/exception-flow-design.md` |
+
+### 全フェーズ共通
+
+`roles/verifier.md` の「全フェーズ共通の品質評価基準」で定義している。
+
+| 接頭辞 | 観点 |
+|---|---|
+| TR | トレーサビリティ |
+| NT | 用語と記法 |
+| PD | フェーズ規律 |
+| DL | AIに任せない領域 |
+
+---
+
+## 判断の ID
+
+`design/DECISIONS.md` に記録する判断は `D-3桁の連番`（D-001、D-002…）で振る。削除した ID は再利用しない。
