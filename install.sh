@@ -44,6 +44,9 @@ done
 place "$(fill "$FW/entry/design-loop.md")" "$CLAUDE_DIR/skills/design-loop/SKILL.md"
 echo "  design-loop（入口）"
 
+place "$(fill "$FW/entry/requirements-loop.md")" "$CLAUDE_DIR/skills/requirements-loop/SKILL.md"
+echo "  requirements-loop（入口）"
+
 echo
 echo "サブエージェント:"
 place "$(fill "$FW/roles/verifier.md")" "$CLAUDE_DIR/agents/design-verifier.md"

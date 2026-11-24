@@ -19,6 +19,7 @@
 
 | No. | フェーズ | スキル | 成果物 | 入力 | 常設の承認ポイント | スキルの検証 |
 |---|---|---|---|---|---|---|
+| 0 | 要件定義 | requirements-definition | requirements.md、requirements/ | 利用者の回答 | ★（毎反復） | 試運転1件 |
 | 1-1 | ユースケース定義 | usecase-definition | 1-1_usecase-definition.md | 要件 | ★ | 未検証 |
 | 1-2 | 概念モデリング | concept-modeling | 1-2_concept-modeling.md | 要件、1-1 | | 未検証 |
 | 1-3 | 責務割り当て | responsibility-allocation | 1-3_responsibility-allocation.md | 1-1、1-2 | ★ | 未検証 |
@@ -31,6 +32,12 @@
 | 5 | 例外フロー設計 | exception-flow-design | 5_exception-flow-design.md | 1-1、2、4-1〜4-4 | ★ | 未検証 |
 
 要件は案件フォルダ直下の `requirements.md`。成果物は案件フォルダの `design/` に置く。
+
+フェーズ 0（要件定義）は入口 `requirements-loop` から起動する。進め方は 4〜8 節ではなく、スキル `requirements-definition` に従う。違いは次のとおり。
+
+- 1反復＝1論点。承認ポイントは毎反復で、利用者の回答そのものが決定になる。AIは決めない
+- 自律度は L1 で固定（L2 に上げない）
+- 9 節の停止条件「要件そのものに欠落や矛盾がある → 要件定義に戻す」の戻り先がこのフェーズになる。設計ループの確認待ちで要件の空白を埋める回答が出たら、このフェーズで決定台帳と `requirements.md` に記録する
 
 「スキルの検証」は、そのスキルを試しの題材で回し、問題を直し終えたかどうか。未検証のスキルで作った成果物は、人間が特に注意して確認する。
 
